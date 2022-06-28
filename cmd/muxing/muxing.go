@@ -34,7 +34,7 @@ func Start(host string, port int) {
 func myParamHandler(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	param := vars["PARAM"]
-	fmt.Fprintf(w, "Hello, %s\n", param)
+	fmt.Fprintf(w, "Hello, %s!\n", param)
 }
 
 func myBadHandler(w http.ResponseWriter, r *http.Request) {
